@@ -8,10 +8,11 @@
 I will need to add core features that allow the user to add a pet, schedule different events with varying priorities,
 and be able to view all of the events
 - What classes did you include, and what responsibilities did you assign to each?
-
+Task class which contains a description, time, frequency, a boolean to mark it complete using a method, a Pet class that contains the animal name and species, and what tasks they require, a Owner class that contains a list of all pets that they own, and a scheduler class to schedule specific tasks
 **b. Design changes**
 
 - Did your design change during implementation?
+No
 - If yes, describe at least one change and why you made it.
 
 ---
