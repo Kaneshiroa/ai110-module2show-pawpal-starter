@@ -58,17 +58,26 @@ Paste a sample of your app's CLI or Streamlit output here so a reader can see wh
 ## 🧪 Testing PawPal+
 
 ```bash
-# Run the full test suite:
-pytest
 
-# Run with coverage:
-pytest --cov
+To ensure the scheduling algorithms and core logic are completely reliable, I built an automated test suite using `pytest`. You can run the suite using the following command:
+
+`python -m pytest`
+
+**What is tested:**
+* Task sorting logic (chronological correctness)
+* Recurring task automation (daily intervals)
+* Schedule conflict detection (duplicate time slots)
+* Task completion and addition state management
+
+Confidence Level: 5 Stars
 ```
 
 Sample test output:
 
 ```
-# Paste your pytest output here
+test_pawpal.py .....                                                                                                       [100%]
+
+======================================================= 5 passed in 0.01s ========================================================
 ```
 
 ## 📐 Smarter Scheduling
