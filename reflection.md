@@ -29,6 +29,8 @@ No
 - Describe one tradeoff your scheduler makes.
 - Why is that tradeoff reasonable for this scenario?
 
+For the conflict detection algorithm, I chose a lightweight approach using a Python set to check for exact time matches. While this is highly performant (O(N) time complexity) and prevents the app from crashing, the tradeoff is that it does not account for task durations (e.g., a 60-minute task at 08:00 won't flag a conflict with a 30-minute task at 08:30). I accepted this tradeoff to keep the MVP simple and fast.
+
 ---
 
 ## 3. AI Collaboration
