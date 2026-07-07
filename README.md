@@ -73,14 +73,12 @@ Sample test output:
 
 ## 📐 Smarter Scheduling
 
-> Fill in once you've implemented scheduling logic.
-
 | Feature | Method(s) | Notes |
 |---------|-----------|-------|
-| Task sorting | | e.g., by priority, duration |
-| Filtering | | e.g., skip tasks if time runs out |
-| Conflict handling | | e.g., overlapping time slots |
-| Recurring tasks | | e.g., daily vs. weekly |
+| Task sorting | `Scheduler.sort_by_time()` | Sorts chronologically using Python's `sorted()` and a lambda key for "HH:MM" format |
+| Filtering | `Scheduler.filter_tasks_by_status()` | Uses list comprehensions to quickly isolate completed or pending tasks |
+| Conflict handling | `Scheduler.check_conflicts()` | Scans the schedule using a hash set to identify exact time slot duplicates and returns warnings |
+| Recurring tasks | `Task.mark_complete()` | Utilizes Python's `timedelta` to automatically generate future instances for "Daily" or "Weekly" tasks |
 
 ## 📸 Demo Walkthrough
 
