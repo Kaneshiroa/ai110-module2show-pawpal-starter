@@ -5,6 +5,8 @@
 **a. Initial design**
 
 - Briefly describe your initial UML design.
+I will need to add core features that allow the user to add a pet, schedule different events with varying priorities,
+and be able to view all of the events
 - What classes did you include, and what responsibilities did you assign to each?
 
 **b. Design changes**
