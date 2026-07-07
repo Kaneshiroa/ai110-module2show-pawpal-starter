@@ -91,12 +91,11 @@ test_pawpal.py .....                                                            
 
 ## 📸 Demo Walkthrough
 
-Describe your app in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. **Add a Pet:** The user starts by entering their pet's name and selecting a species from the dropdown in the "Add a Pet" section. This creates a `Pet` object saved to the session state.
+2. **Schedule Tasks:** The user selects their pet, types a description (e.g., "Morning Walk"), enters a military time (e.g., "08:00"), selects a frequency, and clicks "Add Task".
+3. **View the Schedule:** Clicking the "Generate Schedule" button triggers the `Scheduler`. It gathers tasks from all pets and automatically sorts them chronologically.
+4. **Conflict Detection:** If two tasks are scheduled at the exact same time, the app displays a prominent yellow warning box alerting the user of the scheduling conflict.
+5. **Clean Display:** Finally, the tasks are clearly rendered in a data table showing their completion status, time, description, and frequency.
 
 **Screenshot or video** *(optional)*: <!-- Insert a screenshot or link to a demo video here -->
